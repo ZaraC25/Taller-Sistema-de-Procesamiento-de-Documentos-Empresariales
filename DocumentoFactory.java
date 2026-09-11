@@ -9,7 +9,7 @@ public abstract class DocumentoFactory {
             Documento doc = crearDocumento(tipo);
             doc.procesar(nombreArchivo, formato);
         } catch (Exception e) {
-            System.err.println("❌ Error al procesar documento en " + getPais() + ": " + e.getMessage());
+            System.err.println("Error al procesar documento en " + getPais() + ": " + e.getMessage());
         }
     }
 
